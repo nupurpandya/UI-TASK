@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Task</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper h-100 d-flex">
+        <input type="checkbox" name="" id="check" class="checkbox">
+        <aside class="sidebar h-100">
+            <div class="sidebar-content h-100">
+                <div class="d-flex justify-content-center align-items-center logo-content">
+                    <div class="logo d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                    <h4 class="title-text ml-10">Dashboard Kit</h4>
+                </div>
+                <nav class="navigation d-flex flex-direction-column h-100 ml-5 mt-25">
+                    <ul class="link">
+                        <li class="link-item">
+                            <i class="fa-solid fa-chart-pie"></i><a class="link-a ml-15" href="">Overview</a>
+                        </li>
+                        <li class="link-item mt-20" id="active">
+                            <i class="fa-solid fa-ticket"></i><a class="link-a ml-15" href="">Tickets</a>
+                        </li>
+                        <li class="link-item mt-20">
+                            <i class="fa-sharp fa-solid fa-lightbulb"></i><a class="link-a ml-15" href="">Ideas</a>
+                        </li>
+                        <li class="link-item mt-20">
+                            <i class="fa-solid fa-address-book"></i><a class="link-a ml-15" href="">Contacts</a>
+                        </li>
+                        <li class="link-item mt-20">
+                            <i class="fa-solid fa-chart-pie"></i><a class="link-a ml-15" href="">Agents</a>
+                        </li>
+                        <li class="link-item mt-20">
+                            <i class="fa-sharp fa-solid fa-newspaper"></i><a class="link-a ml-15" href="">Articles</a>
+                        </li>
+                    </ul>
+
+                    <ul class="link mt-20">
+                        <li class="link-item">
+                            <i class="fa-solid fa-gear"></i><a class="link-a ml-15" href="">Settings</a>
+                        </li>
+                        <li class="link-item mt-20">
+                            <i class="fa-solid fa-medal"></i><a class="link-a ml-15" href="">Subscription</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <main class="main">
+            <header class="page-header">
+                <div class="title-details">
+                    <div>
+                        <button class="button btn-primary">
+                            <label for="check"><img src="./assets/images/hambuger menu.png" alt=""></label>
+                        </button>
+                        <span class="page-heading">Tickets</span>
+                    </div>
+                    <div class="user-details d-flex justify-content-center align-items-center">
+                        <i class="maginifying fa fa-magnifying-glass"></i>
+                        <i class="notify fa-solid fa-bell notification"></i>
+                        <span class="user-name">Jones Ferdinand</span>
+
+                        <button class="avatar-button">
+                            <img src="./assets/images/avatar.png" class="avatar-img" alt="">
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <section class="table-section">
+                <div class="table-header d-flex justify-space-between">
+                    <div>
+                        <h4 class="table-heading">All tickets</h4>
+                    </div>
+                    <div>
+                        <i class="fa  fa-sort"></i>
+                        <span class="mr-15 sort-text">Sort</span>
+                        <i class="fa fa-filter"></i>
+                        <span class="filter-text">Filter</span>
+                    </div>
+                </div>
+                <div class="table">
+                    <table class="ticket-table">
+                        <thead class="t-head">
+                            <th>Ticket details</th>
+                            <th>Customer name</th>
+                            <th>Date</th>
+                            <th>Priority</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="table-data d-flex">
+
+                                        <img src="./assets/images/avatar.png" class="avatar-img" alt="">
+                                        <div class="ml-15">
+                                            <h4 class="table-details">Contact Email not Linked</h4>
+                                            <span class="text">Updated 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">Tom Cruise</h4>
+                                        <span class="text">on 24/05/2019</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">May 26,2019</h4>
+                                        <span class="text">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="badge-high">HIGH</span>
+                                    
+                                   
+                                </td>
+                                <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-data d-flex">
+
+                                        <img src="./assets/images/avatar.png" class="avatar-img" alt="">
+                                        <div class="ml-15">
+                                            <h4 class="table-details">Adding Images to Featured Post</h4>
+                                            <span class="text">Updated 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">Matt Damon</h4>
+                                        <span class="text">on 24/05/2019</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">May 26,2019</h4>
+                                        <span class="text">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="badge-low">LOW</span>
+                                 
+                                </td>
+                                <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-data d-flex">
+
+                                        <img src="./assets/images/avatar.png" class="avatar-img" alt="">
+                                        <div class="ml-15">
+                                            <h4 class="table-details">When will I be charged this month?</h4>
+                                            <span class="text">Updated 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">Robert Downy</h4>
+                                        <span class="text">on 24/05/2019</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">May 26,2019</h4>
+                                        <span class="text">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="badge-high">HIGH</span>
+                                 
+                                </td>
+                                <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-data d-flex">
+
+                                        <img src="./assets/images/avatar.png" class="avatar-img" alt="">
+                                        <div class="ml-15">
+                                            <h4 class="table-details">Adding Images to Featured Post</h4>
+                                            <span class="text">Updated 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">Matt Damon</h4>
+                                        <span class="text">on 24/05/2019</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">May 26,2019</h4>
+                                        <span class="text">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="badge-normal">NORMAL</span>
+                                 
+                                </td>
+                                <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-data d-flex">
+
+                                        <img src="./assets/images/avatar.png" class="avatar-img" alt="">
+                                        <div class="ml-15">
+                                            <h4 class="table-details">Adding Images to Featured Post</h4>
+                                            <span class="text">Updated 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">Matt Damon</h4>
+                                        <span class="text">on 24/05/2019</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">May 26,2019</h4>
+                                        <span class="text">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="badge-high">HIGH</span>
+                                 
+                                </td>
+                                <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-data d-flex">
+
+                                        <img src="./assets/images/avatar.png" class="avatar-img" alt="">
+                                        <div class="ml-15">
+                                            <h4 class="table-details">Adding Images to Featured Post</h4>
+                                            <span class="text">Updated 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">Matt Damon</h4>
+                                        <span class="text">on 24/05/2019</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">May 26,2019</h4>
+                                        <span class="text">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="badge-normal">NORMAL</span>
+                                 
+                                </td>
+                                <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-data d-flex">
+
+                                        <img src="./assets/images/avatar.png" class="avatar-img" alt="">
+                                        <div class="ml-15">
+                                            <h4 class="table-details">Adding Images to Featured Post</h4>
+                                            <span class="text">Updated 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">Matt Damon</h4>
+                                        <span class="text">on 24/05/2019</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">May 26,2019</h4>
+                                        <span class="text">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="badge-low">LOW</span>
+                                 
+                                </td>
+                                <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-data d-flex">
+
+                                        <img src="./assets/images/avatar.png" class="avatar-img" alt="">
+                                        <div class="ml-15">
+                                            <h4 class="table-details">Adding Images to Featured Post</h4>
+                                            <span class="text">Updated 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">Matt Damon</h4>
+                                        <span class="text">on 24/05/2019</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">May 26,2019</h4>
+                                        <span class="text">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="badge-normal">NORMAL</span>
+                                 
+                                </td>
+                                <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-data d-flex">
+
+                                        <img src="./assets/images/avatar.png" class="avatar-img" alt="">
+                                        <div class="ml-15">
+                                            <h4 class="table-details">Adding Images to Featured Post</h4>
+                                            <span class="text">Updated 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">Matt Damon</h4>
+                                        <span class="text">on 24/05/2019</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">May 26,2019</h4>
+                                        <span class="text">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="badge-normal">NORMAL</span>
+                                 
+                                </td>
+                                <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-data d-flex">
+
+                                        <img src="./assets/images/avatar.png" class="avatar-img" alt="">
+                                        <div class="ml-15">
+                                            <h4 class="table-details">Adding Images to Featured Post</h4>
+                                            <span class="text">Updated 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">Matt Damon</h4>
+                                        <span class="text">on 24/05/2019</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">May 26,2019</h4>
+                                        <span class="text">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="badge-normal">NORMAL</span>
+                                 
+                                </td>
+                                <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-data d-flex">
+
+                                        <img src="./assets/images/avatar.png" class="avatar-img" alt="">
+                                        <div class="ml-15">
+                                            <h4 class="table-details">Adding Images to Featured Post</h4>
+                                            <span class="text">Updated 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">Matt Damon</h4>
+                                        <span class="text">on 24/05/2019</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="table-details">May 26,2019</h4>
+                                        <span class="text">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="badge-normal">NORMAL</span>
+                                 
+                                </td>
+                                <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+               
+                <div class="table-footer d-flex">
+                    <span class="row-per-page-text">Rows per page: 8</span>
+                    <i class="page-down fa-solid fa-sort-down"></i>
+                    <span class="row-per-page-text">1-8 of 1240</span>
+                    <i class="less-than fa-solid fa-less-than"></i>
+                    <i class="fa-solid fa-greater-than"></i>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

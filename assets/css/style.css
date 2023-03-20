@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+/* body{
+    background-color:red;
+} */
+:root{
+    --text-color:#7d7f89
+}
+.sidebar-content{
+    width: 225px;
+    background-color: #363740;
+    
+}
+.logo-content{
+    padding: 15px;
+}
+.logo{
+    height: 30px;
+    width: 30px;
+    background-color: #3559fa;
+    border-radius: 50%;
+}
+
+.title-text{
+    color: var(--text-color);
+}
+li{
+    border-left: 3px solid transparent;
+}
+.link-a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.link-item{
+    list-style-type: none;
+}
+.page-header{
+    background: #e0e1e3;
+    display: flex;
+    flex: 1;
+    height: 10%;
+    padding: 20px;
+}
+.notification::after{
+    content: ' ';
+    width: 2px;
+    height: 30px;
+    background-color: #939496;
+    position: absolute;
+    right: 220px;
+    top: 50px;
+}
+.main{
+    padding: 20px;
+    flex: 1;
+    background-color: #e0e1e3;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.title-details{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+.avatar-button{
+    border: none;
+    background-color: #e0e1e3;
+}
+.avatar-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+}
+#active{
+    padding: 20px 0px;
+    border-left: 3px solid transparent;
+    transition: .5s ease-in-out;
+}
+#active:hover{
+    background-color: #3e4049;
+    /* padding: 20px 0px;    */
+    border-left: 3px solid #dde3fe;
+
+}
+.page-heading{
+    font-size: 20px;
+    color: #252732;
+}
+.maginifying{
+    margin-right: 15px;
+}
+.notify{
+    margin-right: 15px;
+}
+.user-name{
+    margin-right: 15px;
+    color: #41434d;
+}
+.table-heading{
+    font-weight: 200;
+    color: #2e303a;
+}
+.table-section{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid #dfe0ea;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.sort-text{
+    color: #7c7f93;
+}
+.filter-text{
+    color: #7c7f93;
+}
+.ticket-table{
+    min-width: 1000px;
+    border-collapse: collapse;
+}
+.table{
+    margin-top: 50px;
+    overflow: auto;
+}
+.table-footer{
+    justify-content: end;
+}
+.badge-high{
+    background-color: red;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 12px;
+}
+.badge-low{
+    background-color: #fdc231;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 12px;
+}
+.badge-normal{
+    background-color: #32cb9a;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 12px;
+}
+.table-details{
+    color: #565861;
+    font-size: 14px;
+    font-weight: 600;
+}
+.text{
+    color: #d1d3d8;
+    font-size: 14px;
+    font-weight: 100;
+}
+.table-footer{
+    margin-top: 15px;
+}
+.row-per-page-text{
+    color: #b8bac6;
+    font-size: 15px;
+    margin-right: 20px;
+}
+.less-than{
+    margin-right: 12px;
+}
+.page-down{
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.button{
+    background-color: #e0e1e3;
+    border: none;
+}
+.checkbox{
+    display: none;
+}
+.sidebar{
+    /* position: fixed; */
+    /* z-index: 3; */
+    width: 225px;
+    transform: translateX(0);
+    transition: 1s ease-in-out;
+}
+#check:checked+.sidebar{
+    transform: translateX(-225px);
+    transition: 1s ease-in-out;
+    width: 0px;
+}
+th{
+    text-align: left;
+    font-size: 14px;
+    color: #a5a8b7;
+    font-weight: 200;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+td{
+    border-bottom: 1px solid #ecedf5;
+    padding: 20px;
+}
+/* Helper Classes */
+.d-flex{
+    display: flex;
+}
+.flex-direction-column{
+    flex-direction: column;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-space-between{
+    justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
+}
+.h-100{
+    height: 100%;
+}
+/* Margins */
+.ml-10{
+    margin-left: 10px;
+}
+.ml-5{
+    margin-left: 5px;
+}
+.mt-25{
+    margin-top: 25px;
+}
+.ml-15{
+    margin-left: 15px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mr-15{
+    margin-right: 15px;
+}
